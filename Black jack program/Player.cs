@@ -10,10 +10,12 @@ namespace Black_jack_program
     {
         public string Name { get; }
         public Hand PlayerHand { get; }
+        public int MoneyBalance { get; set;}    
         public Player(string name)
         {          
             Name = name;
             PlayerHand = new Hand();
+            MoneyBalance = 1000;
         }
        
     }
